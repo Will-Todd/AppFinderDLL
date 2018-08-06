@@ -15,7 +15,7 @@ using System.Runtime.InteropServices;
 ```
 and then within your monobehaviour place
 ```
-[DllImport("PrintyBoi", EntryPoint = "SearchAppsForString")]
+[DllImport("AppFinder", EntryPoint = "SearchAppsForString")]
 public static extern int SearchAppsForString(string name);
 ```
 To make the code simpler, the function returns an a '1' if true and '0' if false. Regular booleans require marshaling that isn't necessary here. 
